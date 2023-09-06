@@ -1,0 +1,184 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: rgb(1, 122, 221);
+}
+
+header h1 {
+        color: whitesmoke;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2.5em;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 16px;
+}
+
+nav a:hover {
+    color: rgb(127, 197, 255);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+#sobre {
+    display: flex;
+    margin: 36px 0;
+}
+
+.separador {
+    padding: 0 0 0 36px;
+}
+
+h2 {
+    display: block;
+    border-bottom: 2px solid rgb(1, 122, 221);
+    padding-bottom: 16px;
+    margin-bottom: 36px;
+    color: rgb(1, 122, 221);
+    font-style: italic;
+}
+
+.produtos img {
+    width: 100%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    margin-bottom: 36px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+
+.produtos p {
+    margin-bottom: 16px;
+}
+
+.produtos button {
+    padding: 8px;
+    width: 100%;
+    color: whitesmoke;
+    background-color: rgb(1, 122, 221);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.produtos button:hover {
+    background-color: rgb(127, 197, 255);
+    color: rgb(1, 122, 221);
+}
+
+footer {
+    margin-top: 48px;
+}
+
+footer p {
+    color: whitesmoke;
+    padding: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .separador {
+        padding: 0;
+    }
+
+    nav {
+        margin-left: 24px;
+    }
+
+    nav a {
+        padding: 0px;
+    }
+
+    h2 {
+        padding: 16px 0;
+        margin: 0;
+    }
+
+    #sobre {
+        display: block;
+    }
+    
+    #sobre img {
+        max-width: 100%;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos p {
+        margin: 8px;
+    }
+
+    .produtos img {
+        margin-top: 16px;
+    }
+
+    button {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    #sobre {
+        text-align: center;
+        display: block;
+    }
+
+    #sobre h2,
+    #sobre p {
+        text-align: left;
+        margin-top: 16px;
+    }
+
+    .separador {
+        padding: 0;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
+    }
+}
